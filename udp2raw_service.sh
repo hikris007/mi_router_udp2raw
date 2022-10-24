@@ -6,9 +6,7 @@ STOP=11
 
 USE_PROCD=1
 
-if [ ! $UDP2RAW_HOME ];then
-    UDP2RAW_HOME="/etc/udp2raw"
-fi
+UDP2RAW_HOME="/etc/udp2raw"
 
 start_service() {
     procd_open_instance
